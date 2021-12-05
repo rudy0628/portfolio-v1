@@ -205,14 +205,14 @@
                 <div class="cta-text-box">
                     <h2 class="heading-secondary">聯絡我</h2>
                     <p class="cta-text">如果有問題，請填寫Email</p>
-                    <form class="cta-form">
+                    <form class="cta-form" name="contact" netlify>
                         <div>
                             <label for="fullname">姓名</label>
-                            <input type="text" class="full-name" id="fullname" placeholder="王小名" required>
+                            <input type="text" class="full-name" id="fullname" placeholder="王小名" name="fullname" required>
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="rudy@example.com" required>
+                            <input type="email" id="email" placeholder="rudy@example.com" name="email" required>
                         </div>
                         <button class="btn btn--form">送出</button>
                     </form>
