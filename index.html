@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rudy's portfolio is my portfolio, this page has my skills、education and side project, you can connect me with contact us.">
+
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/script.js"></script>
+    
+    <!-- map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <title>Rudy's portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header-logo">Rudy's</a>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li><a href="#section-about" class="header-nav-link">關於我</a></li>
+                <li><a href="#section-project" class="header-nav-link">作品集</a></li>
+                <li><a href="#section-cta" class="header-nav-link nav-cta">聯絡我</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+    </header>
+    <main>
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="heading-primary">嗨！我是葉世平</h1>
+                    <p class="hero-text">目前正在往前端工程師的路上，想成為一位前端開發工程師</p>
+                    <a href="#section-about" class="btn btn--full margin-right-sm">start to see &darr;</a>
+                    <a href="https://github.com/rudy0628" class="btn btn--outline" target="_blank" rel="noopener">github</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about" id="section-about">
+            <div class="container">
+                <span class="subheading">about</span>
+                <h2 class="heading-secondary">自我介紹</h2>
+            </div>
+
+            <div class="container grid grid--2-cols">
+                <div class="about-img-box">
+                    <picture>
+                        <source srcset="img/me.webp" type="image/webp">
+                        <source srcset="img/me-min.jpg" type="image/jpg">
+                        <img src="img/me-min.jpg" alt="the person rudy yeh">
+                    </picture>
+                </div>
+                <div class="about-text-box">
+                    <p class="about-text">
+                        <ion-icon name="person-outline" class="about-icon"></ion-icon>葉世平
+                    </p>
+                    <p class="about-text">
+                        <ion-icon name="school-outline" class="about-icon"></ion-icon>國立高雄科技大學商務資訊應用系(前資訊管理系)
+                    </p>
+                    <p class="about-text">
+                        <ion-icon name="thumbs-up-outline" class="about-icon"></ion-icon>Web開發、App開發
+                    </p>
+                    <p class="about-text">
+                        <ion-icon name="medal-outline" class="about-icon"></ion-icon>2021創新資訊與行動應用競賽行動應用組第二名
+                    </p>
+                    <div class="about-text">
+                        <ion-icon name="hammer-outline" class="about-icon"></ion-icon>
+                        <div class="about-skills">
+                            <ion-icon name="logo-html5" class="skills-icon"></ion-icon>
+                            <ion-icon name="logo-css3" class="skills-icon"></ion-icon>
+                            <ion-icon name="logo-javascript" class="skills-icon"></ion-icon>
+                            <ion-icon name="logo-nodejs" class="skills-icon"></ion-icon>
+                            <ion-icon name="logo-react" class="skills-icon"></ion-icon>
+                            <ion-icon name="logo-github" class="skills-icon"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-project" id="section-project">
+            <div class="container">
+                <span class="subheading">project</span>
+                <h2 class="heading-secondary">作品集</h2>
+            </div>
+            <div class="projects">
+                <div class="project project--1">
+                    <div class="project-box">
+                        <div class="project-img-box">
+                            <picture>
+                                <source srcset="img/project/shoppingsite.webp" type="image/webp">
+                                <source srcset="img/project/shoppingsite-min.png" type="image/png">
+                                <img src="img/project/shoppingsite-min.png" alt="side project shoppingsite image">
+                            </picture>
+                        </div>
+                        <div class="project-text-box">
+                            <h3 class="heading-tertiary">Shoppingsite</h3>
+                            <p class="project-text">小型電商網站，可以上傳商品以及擁有購物車系統。<br>使用技術: ejs、express、nodejs、mongodb、bootstrap</p>
+                        </div>
+                        <div class="project-link-box">
+                            <a href="https://blooming-eyrie-21858.herokuapp.com/" class="project-link" target="_blank" rel="noopener">Site &rarr;</a>
+                            <a href="https://github.com/rudy0628/shoppingSite" class="project-link" target="_blank" rel="noopener">Github &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project project--2">
+                    <div class="project-box">
+                        <div class="project-img-box">
+                            <picture>
+                                <source srcset="img/project/disneypage-clone.webp" type="image/webp">
+                                <source srcset="img/project/disneypage-clone-min.png" type="image/png">
+                                <img src="img/project/disneypage-clone-min.png" alt="side project disneypage-clone image">
+                            </picture>
+                        </div>
+                        <div class="project-text-box">
+                            <h3 class="heading-tertiary">disney page clone</h3>
+                            <p class="project-text">迪士尼網站複製<br>使用技術: html、css</p>
+                        </div>
+                        <div class="project-link-box">
+                            <a href="https://taiwan-disney-page-clone.netlify.app/" class="project-link" target="_blank" rel="noopener">Site &rarr;</a>
+                            <a href="https://github.com/rudy0628/taiwan-disney-landing-page-clone" class="project-link" target="_blank" rel="noopener">Github &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project project--3">
+                    <div class="project-box">
+                        <div class="project-img-box">
+                            <picture>
+                                <source srcset="img/project/luckybase.webp" type="image/webp">
+                                <source srcset="img/project/luckybase-min.png" type="image/png">
+                                <img src="img/project/luckybase-min.png" alt="side project luckybase image">
+                            </picture>
+                        </div>
+                        <div class="project-text-box">
+                            <h3 class="heading-tertiary">luckybase</h3>
+                            <p class="project-text">自製隨機結果棒球小遊戲，可以顯示壘包及目前得分，有對戰機制<br>使用技術: html、css、js</p>
+                        </div>
+                        <div class="project-link-box">
+                            <a href="https://luckybase-rudy.netlify.app/" class="project-link" target="_blank" rel="noopener">Site &rarr;</a>
+                            <a href="https://github.com/rudy0628/luckybase" class="project-link" target="_blank" rel="noopener">Github &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project project--4">
+                    <div class="project-box">
+                        <div class="project-img-box">
+                            <picture>
+                                <source srcset="img/project/todolist-map.webp" type="image/webp">
+                                <source srcset="img/project/todolist-map-min.png" type="image/png">
+                                <img src="img/project/todolist-map-min.png" alt="side project todolist-map image">
+                            </picture>
+                        </div>
+                        <div class="project-text-box">
+                            <h3 class="heading-tertiary">todolist-map</h3>
+                            <p class="project-text">傳統 todolist，結合 leaflet 開源地圖，以及 open weather 顯示天氣<br>使用技術: html、css、js、parcel</p>
+                        </div>
+                        <div class="project-link-box">
+                            <a href="https://todolist-map.netlify.app/" class="project-link" target="_blank" rel="noopener">Site &rarr;</a>
+                            <a href="https://github.com/rudy0628/todolist-map" class="project-link" target="_blank" rel="noopener">Github &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project project--5">
+                    <div class="project-box">
+                        <div class="project-img-box">
+                            <picture>
+                                <source srcset="img/project/weather.webp" type="image/webp">
+                                <source srcset="img/project/weather-min.png" type="image/png">
+                                <img src="img/project/weather-min.png" alt="side project weather search image">
+                            </picture>
+                        </div>
+                        <div class="project-text-box">
+                            <h3 class="heading-tertiary">real-time taiwan weather</h3>
+                            <p class="project-text">小型氣象查詢系統，可以查詢台灣各城市即時天氣資訊<br>使用技術: html、css、js</p>
+                        </div>
+                        <div class="project-link-box">
+                            <a href="https://taiwan-weather-search.netlify.app/" class="project-link" target="_blank" rel="noopener">Site &rarr;</a>
+                            <a href="https://github.com/rudy0628/taiwan-weather-real-time-search" class="project-link" target="_blank" rel="noopener">Github &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-carousel btn-carousel--left">
+                    <ion-icon name="chevron-back-outline" class="carousel-icon"></ion-icon>
+                </button>
+                <button class="btn-carousel btn-carousel--right">
+                    <ion-icon name="chevron-forward-outline" class="carousel-icon"></ion-icon>
+                </button>
+                <div class="dots"></div>
+            </div>
+        </section>
+
+        <section class="section-cta" id="section-cta">
+            <div class="cta">
+                <div class="cta-text-box">
+                    <h2 class="heading-secondary">聯絡我</h2>
+                    <p class="cta-text">如果有問題，請填寫Email</p>
+                    <form class="cta-form">
+                        <div>
+                            <label for="fullname">姓名</label>
+                            <input type="text" class="full-name" id="fullname" placeholder="王小名" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="rudy@example.com" required>
+                        </div>
+                        <button class="btn btn--form">送出</button>
+                    </form>
+                    <p class="line-break">或</p>
+                    <p class="cta-text">寄送Eamil給我</p>
+                    <a href="mailto:s3352250zz@gmail.com" class="btn btn--outline" rel="noopener">Email</a>
+                </div>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">2021 &copy; by rudy's portfolio reserve all right</p>
+        <ul class="footer-link">
+            <li>
+                <a href="https://www.instagram.com/ya.0628/" class="footer-link-item" target="_blank" rel="noopener">
+                    <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/s3352250/" class="footer-link-item" target="_blank" rel="noopener">
+                    <ion-icon name="logo-facebook" class="footer-icon" ></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

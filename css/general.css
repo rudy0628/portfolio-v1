@@ -1,0 +1,211 @@
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+    -font weight: 
+    Default: 400
+	medium: 500
+	semi-bold: 600
+	bold: 700
+
+    -line height:
+    Default: 1
+	small: 1.05
+	medium: 1.2
+	paragraph default: 1.6
+
+	-letter spacing:
+	-0.5
+	0.75
+
+    -FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 COLOR
+
+    -Primary: #5c7cfa
+
+    -Tints: 
+    #edf2ff
+    #ced8fe
+    #6c89fb
+    -Shades: 
+    #4a63c8
+    #3B5BDB
+    #374a96
+    #1c254b
+    #121932
+    -Accents:
+    #333 
+    #555
+    #aaa
+
+--- 03 SHADOWS
+
+--- 04 BORDER-RADIUS
+	-default: 9px
+    -medium: 11px
+
+--- 05 WHITESPACE
+    -SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shadows+Into+Light&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1;
+
+	overflow-x: hidden;
+}
+
+/*********************************/
+/* GENERAL CLASS */
+/*********************************/
+.container {
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+}
+
+.grid {
+	display: grid;
+	row-gap: 9.6rem;
+	column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	color: #333;
+}
+
+.heading-primary {
+	font-size: 5.2rem;
+	line-height: 1.05;
+	margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+	font-size: 4.4rem;
+	line-height: 1.2;
+	margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
+}
+
+.subheading {
+	display: block;
+	font-weight: 500;
+	font-size: 1.4rem;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	margin-bottom: 1.6rem;
+	color: #3b5bdb;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 1.6rem 3.2rem;
+	border-radius: 150px;
+
+	/* ONLY FOR BUTTON */
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+
+	transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+	background-color: #3b5bdb;
+	color: #edf2ff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 3px #3b5bdb;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	background-color: #edf2ff;
+	color: #333;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+	background-color: transparent;
+	color: #edf2ff;
+	box-shadow: inset 0 0 0 3px #edf2ff;
+}
+
+.btn--form {
+	padding: 1.2rem;
+	align-self: start;
+	background-color: #1c254b;
+	color: #edf2ff;
+}
+
+.btn--form:hover {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 3px #1c254b;
+}
+
+.margin-right-sm {
+	margin-right: 1.2rem;
+}
+
+.line-break {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 3.2rem;
+	font-size: 1.4rem;
+}
+
+.line-break:before,
+.line-break:after {
+	content: '';
+	flex: 1 1;
+	border-bottom: 2px solid #edf2ff;
+	margin: auto;
+}
+
+.line-break:before {
+	margin-right: 1rem;
+}
+
+.line-break:after {
+	margin-left: 1rem;
+}
