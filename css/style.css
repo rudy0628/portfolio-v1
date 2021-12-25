@@ -80,6 +80,21 @@
 	display: none;
 }
 
+.header__mobile-background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 8rem;
+	width: 8rem;
+	background-color: rgba(237, 242, 255, 0.9);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	border-radius: 50%;
+	opacity: 0;
+	visibility: hidden;
+	transition: transform 0.5s cubic-bezier(1, 0, 0, 1);
+}
+
 /* STICKY NAVIGATION */
 .sticky .header {
 	position: fixed;
